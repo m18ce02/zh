@@ -1,20 +1,10 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+<p align="center"><a href="https://xugaoyi.com/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200409124835.png" alt="logo"></a></p>
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+<h2 align="center">vuepress-theme-vdoing</h2>
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+[在线文档(国内源)](https://doc.xugaoyi.com/)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+[主题仓库](https://github.com/xugaoyi/vuepress-theme-vdoing)
+
+[本仓库的gitee镜像](https://gitee.com/xugaoyi/vuepress-theme-vdoing-doc)
