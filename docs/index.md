@@ -34,7 +34,7 @@ postList: none
   textColor: '#2A3344'
 - name: RESTful API integration
   desc: 💠Exchange data through the APIs provided by the platform.
-  link: https://baomidou.com/
+  link: /pages/2ffa7b/
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
 ```

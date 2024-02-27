@@ -48,6 +48,35 @@ module.exports = {
           }
         ]
       },
+	  {
+        text: 'App中文', link: '/pages/7488ac/', items: [
+		  {
+			text: '平台', items: [
+			  { text: '平台总体概述', link: '/pages/becaba/' },
+              { text: '前端开发须知', link: '/pages/ac081b/' },
+              { text: '后台开发须知', link: '/pages/211e7e/' },
+              { text: 'EBI开发须知', link: '/pages/fbff3c/' },
+              { text: 'JSF组件属性表', link: '/pages/b9ae7e/' },
+              { text: 'BPM扩展接口', link: '/pages/72489e/' },
+		      { text: '一查到底扩展接口', link: '/pages/b4a06c/' },
+		      { text: '手机App设置', link: '/pages/5e69e0/' },
+			]  
+		  },
+          {
+            text: 'ERP', items: [
+              { text: 'ERP EJB 接口', link: '/pages/aeea3b/' },
+              { text: 'ERP XML 配置应用', link: '/pages/d5dca4/' },
+              { text: 'ERP 装饰器 (前端接口)', link: '/pages/5551b1/' },
+            ]
+          },
+		  {
+            text: '教程', items: [
+              { text: '设置Eclipse开发环境', link: '/pages/7b6279/' },
+			  { text: '创建App教程', link: '/pages/23b34f/' },
+            ]
+          }
+        ]
+      },
       { 
 		text: 'WebServices', items: [
             { 
