@@ -19,6 +19,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
+	  { text: 'Tutorial', link: '/pages/7487bc/' },
       {
         text: 'App', link: '/pages/7488ac/', items: [
 		  {
@@ -49,7 +50,7 @@ module.exports = {
         ]
       },
 	  {
-        text: 'App中文', link: '/pages/7488ac/', items: [
+        text: 'App中文', link: '/pages/becaba/', items: [
 		  {
 			text: '平台', items: [
 			  { text: '平台总体概述', link: '/pages/becaba/' },
