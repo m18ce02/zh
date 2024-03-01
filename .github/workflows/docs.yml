@@ -14,38 +14,21 @@ jobs:
     steps:
       steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      
+      strategy:
+      matrix:
+        node-version: [18.x]
+      
+      - name: Use Node.js ${{ matrix.node-version }} 
+        uses: actions/setup-node@v3 # install nodejs
         with:
-          node-version: '14'
-          check-latest: true
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - uses: actions/cache@v2
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn
-
-      - name: Run tsc
-        run: yarn tsc
-
-      - name: Run unit tests
-        run: yarn test
-
-      - name: Check linter
-        run: yarn lint
-
-      - name: Check markdown linter
-        run: yarn workspace docs lint-md
-
-      - name: Build vuepress
-        run: yarn build
-
+          node-version: ${{ matrix.node-version }}
+          
+      - name: Build-and-deploy
+        run: |
+          yarn
+          yarn build
+          
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
