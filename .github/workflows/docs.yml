@@ -10,14 +10,13 @@ on:
 jobs:
   docs:
     runs-on: ubuntu-latest
-
+    
+    strategy:
+        matrix:
+          node-version: [18.x]
+          
     steps:
       - uses: actions/checkout@v2
-      
-      strategy:
-      matrix:
-        node-version: [18.x]
-      
       - name: Use Node.js ${{ matrix.node-version }} 
         uses: actions/setup-node@v3 # install nodejs
         with:
