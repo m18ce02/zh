@@ -12,30 +12,39 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          # fetch all commits to get last updated time or other git log info
-          fetch-depth: 0
+          node-version: '14'
+          check-latest: true
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/cache@v2
         with:
-          # choose pnpm version to use
-          version: 8
-          # install deps with pnpm
-          run_install: true
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          # choose node.js version to use
-          node-version: 20
-          # cache deps for pnpm
-          cache: pnpm
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn
 
-      # run build script
-      - name: Build VuePress site
-        run: pnpm docs:build
+      - name: Run tsc
+        run: yarn tsc
+
+      - name: Run unit tests
+        run: yarn test
+
+      - name: Check linter
+        run: yarn lint
+
+      - name: Check markdown linter
+        run: yarn workspace docs lint-md
+
+      - name: Build vuepress
+        run: yarn build
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
