@@ -65,9 +65,9 @@ module.exports = {
 		  },
           {
             text: 'ERP', items: [
-              { text: 'ERP EJB 接口', link: '/pages/aeea3b/' },
-              { text: 'ERP XML 配置应用', link: '/pages/d5dca4/' },
-              { text: 'ERP 装饰器 (前端接口)', link: '/pages/5551b1/' },
+              { text: 'ERP 后端扩展', link: '/pages/aeea3b/' },
+              { text: 'ERP 应用配置', link: '/pages/d5dca4/' },
+              { text: 'ERP 前端扩展', link: '/pages/5551b1/' },
             ]
           },
 		  {
