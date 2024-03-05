@@ -26,6 +26,7 @@ jobs:
         run: |
           yarn
           yarn build
+          echo 'aim18doc.multiable.com' > docs/.vuepress/dist/CNAME
           
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
