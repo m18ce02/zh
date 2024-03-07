@@ -17,7 +17,7 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: '/', items: [{ text: '主页', link: '/pages/7486ac/' }] },
 	  { text: 'Tutorial', link: '/pages/7487bc/' },
       {
         text: 'App', link: '/pages/7488ac/', items: [
@@ -48,6 +48,7 @@ module.exports = {
           }
         ]
       },
+	  /*
 	  {
         text: 'App中文', link: '/pages/becaba/', items: [
 		  {
@@ -77,8 +78,9 @@ module.exports = {
           }
         ]
       },
+	  */
       { 
-		text: 'WebServices', items: [
+		text: 'WebServices', link: '/pages/2ffa7b/', items: [
             { 
 				text: 'Platform', link: '/pages/2ffa7b/', items: [
 					{ text: 'Authentication', link: '/pages/2ffa7b/' },
@@ -142,7 +144,7 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: 'Send Mail',
-          link: 'mailto:havid.zheng@multiable.com'
+          link: 'mailto:m18ce02@multiable.com'
         },
         {
           iconClass: 'icon-github',
@@ -186,7 +188,7 @@ module.exports = {
     // }],
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-      copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+      copyMessage: 'Copy successfully and then paste it for use.', // default is 'Copy successfully and then paste it for use.'
       duration: 1000, // prompt message display time.
       showInMobile: false // whether to display on the mobile side, default: false.
     }],
