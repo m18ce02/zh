@@ -96,7 +96,7 @@ module.exports = {
 			{ text: 'Document Management', link: '/pages/c06ace/' },
 			{
 			  text: 'Tutorial', items: [
-				{ text: 'Manipulating aiM18 via webservices', link: '/pages/7537af/' },
+				{ text: 'Interacting with aiM18 via webservices', link: '/pages/7537af/' },
 			  ]
             }
         ] 
