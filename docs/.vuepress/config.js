@@ -17,10 +17,9 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', items: [{ text: '主页', link: '/pages/7486ac/' }] },
-	  { text: 'Tutorial', link: '/pages/7487bc/' },
+      { text: 'DOC Home', link: '/', items: [{ text: '文档主页', link: '/pages/7486ac/' }] },
       {
-        text: 'App', link: '/pages/7488ac/', items: [
+        text: 'App Development', link: '/pages/7488ac/', items: [
 		  {
 			text: 'Platform', items: [
 			  { text: 'Overview', link: '/pages/7488ac/' },
@@ -80,7 +79,7 @@ module.exports = {
       },
 	  */
       { 
-		text: 'WebServices', link: '/pages/2ffa7b/', items: [
+		text: 'API Integration', link: '/pages/2ffa7b/', items: [
             { 
 				text: 'Platform', link: '/pages/2ffa7b/', items: [
 					{ text: 'Authentication', link: '/pages/2ffa7b/' },
@@ -101,6 +100,7 @@ module.exports = {
             }
         ] 
 	  },
+	  { text: 'Tutorial', link: '/pages/7487bc/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logonav.png', // 导航栏logo
