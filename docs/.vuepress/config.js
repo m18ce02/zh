@@ -5,8 +5,8 @@ module.exports = {
 
   theme: 'vdoing', // 使用依赖包主题
   // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
-  title: "aiM18 Developer Center",
-  description: 'Make Something People Want',
+  title: "aiM18开发者中心",
+  description: '用创意点亮生活',
   base: "/zh/", // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
@@ -17,39 +17,9 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav: [
-      { text: '文档主页', link: '/', items: [{ text: '文档主页', link: '/pages/7486ac/' }] },
-      {
-        text: 'App Development', link: '/pages/7488ac/', items: [
-		  {
-			text: 'Platform', items: [
-			  { text: 'Overview', link: '/pages/7488ac/' },
-              { text: 'Frontend Framework', link: '/pages/793dcd/' },
-              { text: 'Backend Framework', link: '/pages/793dce/' },
-              { text: 'EBI Development', link: '/pages/793dcf/' },
-              { text: 'JSF Components', link: '/pages/793dcg/' },
-              { text: 'BPM Extension Interface', link: '/pages/793dch/' },
-		      { text: 'Telescope Extension Interface', link: '/pages/793dci/' },
-		      { text: 'Mobile App Setup', link: '/pages/793dcj/' },
-			]  
-		  },
-          {
-            text: 'ERP', items: [
-              { text: 'ERP EJB Interfaces', link: '/pages/1dfab2/' },
-              { text: 'ERP XML Config Files', link: '/pages/1dfab3/' },
-              { text: 'ERP Decorators (Frontend Interfaces)', link: '/pages/1dfab4/' },
-            ]
-          },
-		  {
-            text: 'Tutorial', items: [
-              { text: 'Setup Development Environment', link: '/pages/793dcc/' },
-			  { text: 'Sample App', link: '/pages/d922fb/' },
-            ]
-          }
-        ]
-      },
-	  /*
+      { text: '文档主页', link: '/'},
 	  {
-        text: 'App中文', link: '/pages/becaba/', items: [
+        text: 'App开发', link: '/pages/becaba/', items: [
 		  {
 			text: '平台', items: [
 			  { text: '平台总体概述', link: '/pages/becaba/' },
@@ -77,30 +47,29 @@ module.exports = {
           }
         ]
       },
-	  */
       { 
-		text: 'API Integration', link: '/pages/2ffa7b/', items: [
+		text: 'API集成', link: '/pages/2ffa7b/', items: [
             { 
-				text: 'Platform', link: '/pages/2ffa7b/', items: [
-					{ text: 'Authentication', link: '/pages/2ffa7b/' },
-					{ text: 'Common JSON Objects', link: '/pages/c42005/' },
-					{ text: 'Core Services', link: '/pages/c79a4a/' },
-					{ text: 'EBI Services', link: '/pages/dcf49b/' },
+				text: '平台相关', link: '/pages/2ffa7b/', items: [
+					{ text: 'API授权', link: '/pages/2ffa7b/' },
+					{ text: '通用的数据对象', link: '/pages/c42005/' },
+					{ text: '核心的API', link: '/pages/c79a4a/' },
+					{ text: 'EBI相关接口', link: '/pages/dcf49b/' },
 				]
 			},
-			{ text: 'Enterprise Resource Planning', link: '/pages/b24673/' },
-			{ text: 'Human Capital Management', link: '/pages/fe122f/' },
-			{ text: 'Business Process Management', link: '/pages/d34faf/' },
-			{ text: 'Schedule Management', link: '/pages/48360c/' },
-			{ text: 'Document Management', link: '/pages/c06ace/' },
+			{ text: '企业资源规划', link: '/pages/jd4373/' },
+			{ text: '人力资本管理', link: '/pages/dj9873/' },
+			{ text: '业务流程处理', link: '/pages/d34faf/' },
+			{ text: '日程管理', link: '/pages/48360c/' },
+			{ text: '文档管理', link: '/pages/c06ace/' },
 			{
-			  text: 'Tutorial', items: [
-				{ text: 'Interacting with aiM18 via webservices', link: '/pages/7537af/' },
+			  text: '教程', items: [
+				{ text: '通过API与aiM18进行交互', link: '/pages/7537af/' },
 			  ]
             }
         ] 
 	  },
-	  { text: 'Tutorial', link: '/pages/7487bc/' },
+	  { text: '教程', link: '/pages/7487bc/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logonav.png', // 导航栏logo
@@ -143,7 +112,7 @@ module.exports = {
       icons: [
         {
           iconClass: 'icon-youjian',
-          title: 'Send Mail',
+          title: '发送邮件',
           link: 'mailto:m18ce02@multiable.com'
         },
         {
@@ -153,7 +122,7 @@ module.exports = {
         },
         {
           iconClass: 'icon-erji',
-          title: 'Home Page',
+          title: '主页',
           link: 'https://www.multiable.com/'
         }
       ]
