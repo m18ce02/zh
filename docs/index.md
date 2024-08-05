@@ -4,7 +4,7 @@ heroImage: /img/logo.png
 heroText: 灵活，可靠，易扩展
 tagline: 🚀革新科技，以创想点亮未来!
 actionText: 启程 →
-actionLink: /pages/7488ac/
+actionLink: /pages/becaba/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: # 可选的
@@ -31,7 +31,7 @@ postList: none
 ```yaml
 - name: App开发
   desc: 💦使用平台提供的基础能力，创建你自己的应用程序.
-  link: /pages/7488ac/
+  link: /pages/becaba/
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
 - name: API集成
