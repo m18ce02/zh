@@ -37,6 +37,7 @@ module.exports = {
               { text: 'ERP 后端扩展', link: '/pages/aeea3b/' },
               { text: 'ERP 应用配置', link: '/pages/d5dca4/' },
               { text: 'ERP 前端扩展', link: '/pages/5551b1/' },
+              { text: 'ERP 集团ERP扩展', link: '/pages/6f3a1c/' },
             ]
           },
 		  {
